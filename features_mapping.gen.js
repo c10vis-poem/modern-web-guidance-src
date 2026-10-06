@@ -3,6 +3,10 @@ window.__featuresMapping = {
   "accessible-error-announcement": [
     "user-pseudos"
   ],
+  "accessible-generated-content": [
+    "content",
+    "alt-text-generated-content"
+  ],
   "respect-os-text-scale": [
     "meta-text-scale"
   ],
@@ -22,6 +26,9 @@ window.__featuresMapping = {
     "calc-size",
     "interpolate-size"
   ],
+  "atrule-support-conditionals": [
+    "supports-at-rule"
+  ],
   "calculate-with-intrinsic-sizes": [
     "calc-size",
     "interpolate-size"
@@ -33,6 +40,27 @@ window.__featuresMapping = {
   "content-based-styling": [
     "has",
     "not"
+  ],
+  "css": [
+    "currentcolor",
+    "inherit-value",
+    "initial-value",
+    "unset-value",
+    "revert-value",
+    "em-unit",
+    "container-queries",
+    "logical-properties",
+    "cascade-layers",
+    "where",
+    "is",
+    "has",
+    "nth-child-of",
+    "scope",
+    "nesting",
+    "custom-properties",
+    "popover",
+    "corner-shape",
+    "border-radius"
   ],
   "css-conditionals": [
     "if",
@@ -62,6 +90,16 @@ window.__featuresMapping = {
   "reduce-style-repetition": [
     "function"
   ],
+  "responsive-design": [
+    "container-queries",
+    "viewport-unit-variants",
+    "aspect-ratio",
+    "min-max-clamp",
+    "viewport-units"
+  ],
+  "selector-atrule-combinations": [
+    "container-style-queries"
+  ],
   "size-aware-styling": [
     "container-queries"
   ],
@@ -86,10 +124,12 @@ window.__featuresMapping = {
     "inputmode"
   ],
   "autofill-sign-in-form": [
+    "autocorrect",
     "input-email-tel-url",
     "inputmode"
   ],
   "autofill-sign-up-form": [
+    "autocorrect",
     "input-email-tel-url",
     "inputmode"
   ],
@@ -150,6 +190,12 @@ window.__featuresMapping = {
   "slider-tooltip": [
     "anchor-positioning",
     "progress"
+  ],
+  "sms-otp-form": [
+    "web-otp",
+    "inputmode",
+    "aborting",
+    "permissions-policy"
   ],
   "switch": [
     "switch-control",
@@ -285,8 +331,18 @@ window.__featuresMapping = {
   "improve-next-page-load-performance": [
     "speculation-rules"
   ],
+  "interaction-paint-timing": [
+    "interaction-contentful-paint",
+    "soft-navigations"
+  ],
   "interactions-in-complex-layouts": [
     "content-visibility"
+  ],
+  "lazy-load-video-and-audio": [
+    "loading-lazy-media",
+    "video",
+    "audio",
+    "intersection-observer"
   ],
   "load-shared-resources-declaratively": [
     "tmp-cross-origin-storage",
@@ -334,6 +390,14 @@ window.__featuresMapping = {
   "migrate-web-app-origin": [
     "app-migration"
   ],
+  "client-side-encryption": [
+    "tmp-webcrypto-modern-algos",
+    "web-cryptography"
+  ],
+  "digital-signatures": [
+    "tmp-webcrypto-modern-algos",
+    "web-cryptography"
+  ],
   "local-network-access": [
     "local-network-access"
   ],
@@ -359,8 +423,18 @@ window.__featuresMapping = {
   "passkeys": [
     "webauthn"
   ],
+  "restrict-outbound-connections": [
+    "connection-allowlists"
+  ],
   "sanitize-untrusted-html": [
     "sanitizer"
+  ],
+  "secure-external-subresources": [
+    "url-cross-origin",
+    "url-referrer-policy",
+    "url-integrity",
+    "subresource-integrity",
+    "referrer-policy"
   ],
   "trusted-types": [
     "trusted-types"
@@ -382,7 +456,7 @@ window.__featuresMapping = {
     "svg",
     "container-style-queries",
     "registered-custom-properties",
-    "tmp-linked-parameters"
+    "link-parameters"
   ],
   "position-aware-tooltips": [
     "container-anchor-position-queries",
@@ -460,6 +534,8 @@ window.__featuresMapping = {
     "active-view-transition"
   ],
   "drag": [
+    "pointer-events-api",
+    "touch-action",
     "user-select"
   ],
   "drag-and-drop": [
@@ -494,6 +570,21 @@ window.__featuresMapping = {
   ],
   "light-dismiss-a-dialog": [
     "dialog-closedby"
+  ],
+  "motion": [
+    "transitions",
+    "animations-css",
+    "clip-path",
+    "masks",
+    "scroll-driven-animations",
+    "view-transitions",
+    "individual-transforms",
+    "transition-behavior",
+    "starting-style",
+    "display-animation",
+    "overlay",
+    "prefers-reduced-motion",
+    "registered-custom-properties"
   ],
   "move-dom-element-without-losing-state": [
     "move-before"
@@ -701,6 +792,34 @@ window.__featuresMapping = {
   "apply-webgl-shaders": [
     "canvas-html"
   ],
+  "browser-ui-theming": [
+    "selection",
+    "user-select",
+    "accent-color",
+    "color-scheme",
+    "scrollbar-color",
+    "scrollbar-width",
+    "user-pseudos",
+    "placeholder-shown",
+    "placeholder",
+    "field-sizing",
+    "resize",
+    "customizable-select",
+    "appearance",
+    "has",
+    "file-selector-button"
+  ],
+  "color": [
+    "prefers-color-scheme",
+    "color-scheme",
+    "prefers-contrast",
+    "forced-colors",
+    "system-color",
+    "color-mix",
+    "oklab",
+    "lab",
+    "relative-color"
+  ],
   "color-ramps": [
     "relative-color",
     "function",
@@ -722,6 +841,8 @@ window.__featuresMapping = {
     "color-scheme",
     "prefers-color-scheme",
     "light-dark",
+    "light-dark-image",
+    "image-function",
     "accent-color"
   ],
   "element-shape": [
@@ -729,11 +850,19 @@ window.__featuresMapping = {
     "corner-shape",
     "border-radius"
   ],
+  "equal-width-text-lines": [
+    "text-fit",
+    "text-wrap-balance",
+    "text-box"
+  ],
   "export-html-media-from-canvas": [
     "canvas-html"
   ],
   "expose-canvas-content-to-browser-features": [
     "canvas-html"
+  ],
+  "fit-text-to-container": [
+    "text-fit"
   ],
   "generate-derived-colors": [
     "relative-color"
@@ -753,6 +882,33 @@ window.__featuresMapping = {
   ],
   "soft-edge-content-fade": [
     "masks"
+  ],
+  "typography": [
+    "font-size",
+    "rem",
+    "em-unit",
+    "line-height",
+    "overflow-wrap",
+    "text-wrap",
+    "text-wrap-balance",
+    "text-wrap-pretty",
+    "min-max-clamp",
+    "viewport-units"
+  ],
+  "visual-effects": [
+    "box-shadow",
+    "filter",
+    "mix-blend-mode",
+    "background-blend-mode",
+    "isolation",
+    "gradients",
+    "gradient-interpolation",
+    "conic-gradients",
+    "color-mix",
+    "oklab",
+    "supports",
+    "custom-properties",
+    "aspect-ratio"
   ],
   "visually-stable-font-fallbacks": [
     "font-size-adjust"
