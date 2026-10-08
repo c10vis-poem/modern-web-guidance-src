@@ -1029,11 +1029,23 @@
   "text-combine-upright": [
     "css"
   ],
+  "text-decoration": [
+    "css"
+  ],
   "text-decoration-line-blink": [
     "animation",
     "css"
   ],
   "text-decoration-selection": [
+    "css"
+  ],
+  "text-decoration-skip-ink": [
+    "css"
+  ],
+  "text-decoration-skip-ink-all": [
+    "css"
+  ],
+  "text-decoration-spelling-grammar": [
     "css"
   ],
   "text-indent": [
