@@ -68,7 +68,8 @@ window.__featuresMapping = {
     "cascade-layers",
     "abs-sign",
     "color-mix",
-    "light-dark"
+    "light-dark",
+    "tmp-revert-rule"
   ],
   "design-token-reactivity": [
     "container-style-queries"
@@ -265,10 +266,6 @@ window.__featuresMapping = {
   "support-global-calendar-systems": [
     "temporal"
   ],
-  "scoped-component-transitions": [
-    "view-transitions-element-scoped",
-    "view-transitions"
-  ],
   "avoid-redundant-large-asset-downloads": [
     "tmp-cross-origin-storage",
     "fetch",
@@ -442,6 +439,9 @@ window.__featuresMapping = {
   "validate-origins": [
     "origin"
   ],
+  "verify-email-ownership": [
+    "tmp-email-verification"
+  ],
   "carousel-slide-effects": [
     "scroll-driven-animations",
     "scroll-snap"
@@ -449,6 +449,13 @@ window.__featuresMapping = {
   "component-specific-light-dark-theme": [
     "color-scheme",
     "light-dark"
+  ],
+  "custom-list-markers": [
+    "marker",
+    "list-style",
+    "subgrid",
+    "counter-style",
+    "symbols-function"
   ],
   "icons": [
     "masks",
@@ -606,6 +613,12 @@ window.__featuresMapping = {
   "platform-controls-dismiss-dialog": [
     "dialog-closedby"
   ],
+  "prevent-page-scroll-under-modal-dialog": [
+    "overscroll-behavior",
+    "dialog",
+    "backdrop",
+    "modal"
+  ],
   "responsive-disclosure": [
     "popover",
     "dialog",
@@ -614,6 +627,14 @@ window.__featuresMapping = {
   ],
   "same-document-transitions": [
     "view-transitions"
+  ],
+  "scoped-component-transitions": [
+    "view-transitions-element-scoped",
+    "view-transitions"
+  ],
+  "scroll-completion-effects": [
+    "scroll-promises",
+    "scroll-into-view"
   ],
   "scroll-entry-exit-effects": [
     "scroll-driven-animations"
@@ -655,6 +676,12 @@ window.__featuresMapping = {
     "resize-observer",
     "web-animations"
   ],
+  "swipe-to-reveal": [
+    "overscroll-behavior",
+    "scroll-initial-target",
+    "scroll-snap",
+    "scrollbar-width"
+  ],
   "accordion": [
     "hidden-until-found",
     "interpolate-size",
@@ -680,7 +707,9 @@ window.__featuresMapping = {
   ],
   "checkbox": [
     "accent-color",
-    "indeterminate"
+    "indeterminate",
+    "individual-transforms",
+    "masks"
   ],
   "checkbox-group": [
     "subgrid",
@@ -824,7 +853,8 @@ window.__featuresMapping = {
     "relative-color",
     "function",
     "oklab",
-    "color-mix"
+    "color-mix",
+    "lab"
   ],
   "complex-shapes": [
     "masks",
@@ -848,7 +878,8 @@ window.__featuresMapping = {
   "element-shape": [
     "border-shape",
     "corner-shape",
-    "border-radius"
+    "border-radius",
+    "tmp-polygon-round"
   ],
   "equal-width-text-lines": [
     "text-fit",
@@ -864,8 +895,11 @@ window.__featuresMapping = {
   "fit-text-to-container": [
     "text-fit"
   ],
-  "generate-derived-colors": [
-    "relative-color"
+  "gradient-borders": [
+    "background-clip-border-area",
+    "background-clip",
+    "masks",
+    "registered-custom-properties"
   ],
   "improve-text-layout-and-legibility": [
     "text-wrap-balance",
